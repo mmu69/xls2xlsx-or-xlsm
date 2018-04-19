@@ -43,7 +43,7 @@ Sub ConvertToXlsx()
                 
                 savedNewFile = True
                 On Error Resume Next
-                wbk.SaveAs Filename:=strNewFile & "x", FileFormat:=intNewFileType
+                wbk.SaveAs Filename:=strNewFile, FileFormat:=intNewFileType
                 If Err Then
                     savedNewFile = False
                     Debug.Print "Cannot save file as: " & strNewFile
